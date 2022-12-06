@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/31b8475d17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style type="text/css" media="screen">
+        A:link {
+            color: rgb(215, 144, 0);
+            text-decoration: none
+        }
+
+        A:hover {
+            color: rgb(215, 144, 0);
+            text-decoration: none
+        }
+
+        A:visited {
+            color: rgb(215, 144, 0);
+            text-decoration: none
+        }
+    </style>
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!-- NAVBAR INICIO -->
+    <nav class="navbar navbar-dark navbar-expand bg-dark shadow-lg fixed-top">
+        <div class="container-fluid">
+            <div class="p-2 align-items-center">
+                <a class="navbar-brand logo" href="index.html"><img src="assets/img/APLogo.png" width="170px"
+                        class="img-fluid" alt="Argentina Programa"></a>
+            </div>
+            <ul class="list-group list-group-horizontal">
+
+                <li class="list-group-item bg-dark borderless">
+                    <a href="login.html" class="btn btn-fluid btn-outline-warning btn-sm" role="button">Cerrar
+                        Sesión</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- NAVBAR FINAL  -->
+
+    <!-- DASH INICIO -->
+    <section id="dash" class="section">
+        <div class="container-lg text-center">
+            <div class="row">
+                <div class="col-2">
+                    <div class="thumbnail text-center">
+                        <img src="assets/img/YOP.png" class="rounded-circle profileimg img-fluid pb-2" width="280"
+                            height="auto" alt="">
+                        <a href="" class="txtcolor profileedit pb-5"><i class='fas fa-edit fa'
+                                style='font-size:1.75vw'></i>
+                        </a>
+
+                    </div>
+
+                    <nav class="vertical" id="list-tab" role="tablist">
+                        <ul>
+                            <li class="vertical">
+                                <a class="list-group-item list-group-item-action active" id="list-info-list"
+                                    data-bs-toggle="list" href="#list-info" role="tab" aria-controls="list-info">
+                                    <i class="ps-1 fa-solid fa-info" style="color: rgb(215, 144, 0);"></i>
+                                    <p class="d-none d-lg-inline-block ps-2 txtcolor">Info</p>
+                                </a>
+                            </li>
+
+                            <li class="vertical">
+                                <a href="#list-redes" class="list-group-item list-group-item-action active"
+                                    id="list-redes-list" data-bs-toggle="list" role="tab" aria-controls="list-redes">
+                                    <i class="fa-solid fa-share-nodes" style="color: rgb(215, 144, 0);"></i>
+                                    <p class="d-none d-lg-inline-block ps-2 txtcolor">Redes</p>
+                                </a>
+                            </li>
+                            <li class="vertical"></li>
+                            <li class="vertical"></li>
+                            <li class="vertical"></li>
+                            <li class="vertical"></li>
+                            <li class="vertical"></li>
+                        </ul>
+
+                    </nav>
+                </div>
+                <div class="col-10">
+                    <div class="tab-content" id="nav-tabContent">
+
+
+                        <!-- INFO TEXTO INICIO -->
+                        <div class="tab-pane fade show active txtcolor" id="list-info" role="tabpanel"
+                            aria-labelledby="list-info-list">
+                            TEXTO 1Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sed quasi, minima
+                            ipsum nulla
+                            repellat ullam quod a dolor perferendis eum fuga facilis illum saepe impedit maiores qui
+                            accusamus?
+                            Odio?</div>
+
+                        <!-- INFO TEXTO FINAL -->
+
+                        <!-- REDES TEXTO INICIO -->
+
+                        <div class="tab-pane fade txtcolor" id="list-redes" role="tabpanel"
+                            aria-labelledby="list-redes-list">
+                            TEXTO 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ratione accusantium
+                            fugit dolorem non dolore numquam dolorum aliquid impedit, doloribus illum facilis soluta
+                            dicta? Soluta odio perferendis inventore maxime recusandae!</div>
+
+                        <!-- REDES TEXTO FINAL -->
+
+                        <!-- BANNER TEXTO INICIO -->
+
+                        <!-- BANNER TEXTO FINAL -->
+
+                        <!-- PROYECTOS TEXTO INICIO -->
+
+                        <!-- PROYECTOS TEXTO FINAL -->
+
+                        <!-- SKILLS TEXTO INICIO -->
+
+                        <!-- SKILLS TEXTO FINAL -->
+
+                        <!-- EDUCACION TEXTO INICIO -->
+
+                        <!-- EDUCACION TEXTO FINAL -->
+
+                        <!-- EXPERIENCIA TEXTO INICIO -->
+
+                        <!-- EXPERIENCIA TEXTO FINAL -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- DASH FINAL -->
+
+    <!-- FOOTER INICIO -->
+    <footer>
+        <div class="align-items-end container-fluid footer text-center bg-dark">
+            <p>&COPY; 2022 Lautaro Yanigro</p>
+        </div>
+    </footer>
+    <!-- FOOTER FINAL -->
+    </section>
+</body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>

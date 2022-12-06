@@ -1,0 +1,294 @@
+:root {
+  --main-color: rgb(215, 144, 0);
+}
+
+body {
+  background-color: rgb(26, 26, 24);
+}
+
+/* navbar */
+li.borderless {
+  border: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.navbar.navbar-expand.bg-dark {
+  height: 80px;
+  opacity: 0.95;
+}
+
+.list-group-item.bg-dark.borderless img {
+  transition: 0.4s;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+
+.list-group-item.bg-dark.borderless img:hover {
+  transition: 0.4s;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  scale: 110%;
+}
+
+.logo {
+  transition: 0.4s;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+
+.logo:hover {
+  transition: 0.4s;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+}
+
+/* banner */
+.bg {
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.bg-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 100px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+
+}
+
+.bannerh1 {
+  text-shadow:
+    1px 1px 0 var(--main-color),
+    -1px -1px 0 var(--main-color),
+    1px -1px 0 var(--main-color),
+    -1px 1px 0 var(--main-color),
+    1px 1px 0 var(--main-color);
+}
+
+.bannerh2 {
+  color: var(--main-color);
+}
+
+.bannerh3 {
+  text-shadow:
+    1px 1px 0 var(--main-color),
+    -1px -1px 0 var(--main-color),
+    1px -1px 0 var(--main-color),
+    -1px 1px 0 var(--main-color),
+    1px 1px 0 var(--main-color);
+}
+
+.home {
+  background-image: url(/assets/img/BANNER_MOMENTANEO.jpeg);
+  height: 100vh;
+  text-align: center;
+}
+
+.scrolldown {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  left: 50%;
+  top: 88%;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+
+.txtcolor {
+  color: var(--main-color);
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+.footer {
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  opacity: 0.9;
+  margin-top: 5rem;
+}
+
+.imagenSlider {
+  transition: 0.4s;
+  padding: 7px;
+}
+
+.imagenSlider:hover {
+  scale: 103%;
+  transform: translateY(2%);
+  transition: 0.4s;
+}
+
+.skill-item {
+  padding-left: 20%;
+}
+
+.progress {
+  margin-bottom: 20px;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.habilidades,
+.experiencia {
+  padding-top: 160px;
+}
+
+.trabajo,
+.years,
+.trabajologo {
+  display: inline;
+}
+
+.modal-body,
+.modal-footer {
+  position: relative;
+  top: 60%;
+}
+
+.registrate {
+  position: relative;
+  top: 80%;
+  padding-top: 2%;
+}
+
+#dash {
+  padding-top: 7rem;
+  max-height: 100vh;
+}
+
+
+.thumbnail {
+  position: relative;
+  transition: 0.5s;
+}
+
+.profileedit {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  width: 100%;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.profileedit:hover {
+  transition: 0.5s;
+}
+
+.thumbnail:hover .profileedit{
+  position: absolute;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.thumbnail:hover .profileimg{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.dashfooter {
+  bottom: 0;
+}
+
+nav.vertical {
+  float: left;
+  margin-top: 1rem;
+}
+
+li.vertical {
+  display: block;
+  display: flex;
+  writing-mode: vertical;
+  justify-content: center;
+}
