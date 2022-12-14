@@ -241,54 +241,19 @@ ul li {
   padding-top: 2%;
 }
 
-#dash {
-  padding-top: 7rem;
-  max-height: 100vh;
-}
-
-
 .thumbnail {
   position: relative;
   transition: 0.5s;
 }
 
-.profileedit {
-  position: absolute;
-  top: 30%;
-  left: 0%;
-  width: 100%;
-  text-decoration: none;
-  transition: 0.5s;
-  opacity: 0;
+.logoAP {
+  min-width: 5em;
 }
 
-.profileedit:hover {
-  transition: 0.5s;
+.icono {
+  min-width: 1em;
 }
 
-.thumbnail:hover .profileedit{
-  position: absolute;
-  transition: 0.5s;
-  opacity: 1;
-}
-
-.thumbnail:hover .profileimg{
-  opacity: 0.5;
-  transition: 0.5s;
-}
-
-.dashfooter {
-  bottom: 0;
-}
-
-nav.vertical {
-  float: left;
-  margin-top: 1rem;
-}
-
-li.vertical {
-  display: block;
-  display: flex;
-  writing-mode: vertical;
-  justify-content: center;
+.btnedicion:hover {
+  color: var(--main-color);
 }
